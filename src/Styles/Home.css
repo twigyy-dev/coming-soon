@@ -1,0 +1,314 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Fredoka;
+  padding: 8rem 5rem 0;
+}
+
+.home-title {
+  text-align: center;
+}
+
+.home-title h1 {
+  font-weight: 600;
+  font-size: 60px;
+  color: #797979;
+}
+.home-title p {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(69, 69, 69, 61%);
+}
+
+.home-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.get-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.get-email p {
+  font-family: "Fredoka";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.285em;
+  color: #605e5e;
+}
+
+.email-input {
+  display: flex;
+  align-items: center;
+  margin-right: -165px;
+}
+
+.get-email input[type="email"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: transparent;
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 500px;
+  padding: 1.6rem;
+}
+
+.get-email input::placeholder {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Fredoka;
+  letter-spacing: 0.285em;
+  color: rgba(0, 0, 0, 0.47);
+  padding-left: 4rem;
+}
+
+.get-email input:focus {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Fredoka;
+  letter-spacing: 0.15em;
+  color: rgba(0, 0, 0, 0.47);
+  padding: 1.3rem;
+}
+
+.get-email input:enabled {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Fredoka;
+  letter-spacing: 0.15em;
+  color: rgba(0, 0, 0, 0.47);
+  padding: 1.3rem;
+}
+
+.get-email input:-webkit-autofill,
+.get-email input:-webkit-autofill:focus,
+.get-email input:-webkit-autofill:hover,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Fredoka;
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+.get-email button {
+  position: relative;
+  right: 175px;
+  align-self: center;
+  background: #000000;
+  border-radius: 40px;
+  border: none;
+  padding: 1.35rem;
+  width: 175px;
+  color: #bdfa3c;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.13em;
+  font-family: Fredoka;
+}
+
+.get-email button:hover {
+  background: #bdfa3c;
+  color: #000000;
+  cursor: pointer;
+}
+
+.hero-logo {
+  position: relative;
+  z-index: 1000;
+  width: 450px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.greentop {
+  position: absolute;
+  width: 278px;
+  height: 267px;
+  right: 153px;
+  top: 10px;
+
+  background: linear-gradient(
+    123.83deg,
+    rgba(16, 237, 33, 0.6724) 14.3%,
+    rgba(113, 236, 180, 0.744355) 63.64%,
+    rgba(19, 252, 255, 0.82) 115.5%
+  );
+  filter: blur(61px);
+  z-index: 1;
+}
+
+.greenbottom {
+  position: absolute;
+  width: 463px;
+  height: 441px;
+  right: 220px;
+  top: 417px;
+
+  background: linear-gradient(
+    135.88deg,
+    rgba(27, 194, 198, 0.76) 14.65%,
+    rgba(85, 248, 140, 0.76) 48.67%,
+    rgba(0, 245, 19, 0.6232) 84.63%
+  );
+  filter: blur(150.5px);
+  z-index: 1;
+}
+
+.home-mid {
+  display: none;
+}
+
+.social-links a{
+  transition: 0.5s;
+}
+
+.social-links a:hover{
+  transform: scale(1.15);
+  transition: 0.5s;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1499px) {
+  .get-email input[type="email"] {
+    width: 400px;
+  }
+
+  .get-email button {
+    top: 0px;
+    right: 176px;
+    font-size: 20px;
+  }
+
+  .email-input {
+    display: flex;
+    align-items: center;
+  }
+
+  .get-email input::placeholder {
+    padding-left: 0;
+    font-size: 18px;
+  }
+
+  .get-email input:focus,
+  .get-email input:enabled {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .home-container {
+    flex-direction: column;
+    padding: 5rem 2rem 0;
+  }
+
+  .home-title{
+    z-index: 1000;
+  }
+
+  .home-left {
+    gap: 0;
+  }
+
+  .home-right {
+    display: none;
+  }
+
+  .home-title h1 {
+    font-size: 40px;
+  }
+
+  .home-title p {
+    font-size: 20px;
+  }
+
+  .home-mid {
+    display: block;
+  }
+
+  .home-mid .hero-logo {
+    width: 200px;
+  }
+
+  .greenmid {
+    position: absolute;
+    width: 90vw;
+    height: 416px;
+    left: -9px;
+    top: 330px;
+
+    background: linear-gradient(
+      135.88deg,
+      rgba(27, 194, 198, 0.76) 14.65%,
+      rgba(85, 248, 140, 0.76) 48.67%,
+      rgba(0, 245, 19, 0.6232) 84.63%
+    );
+    filter: blur(150.5px);
+    z-index: 1;
+  }
+
+  .get-email{
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .get-email p{
+    font-size: 16px;
+  }
+
+  .get-email input[type="email"]{
+    width: 350px;
+    padding: 0.6rem;
+  }
+
+  .get-email input::placeholder{
+    font-size: 16px;
+    padding-left: 0;
+  }
+
+ .get-email input:focus, .get-email input:enabled, .get-email input:-webkit-autofill,
+.get-email input:-webkit-autofill:focus,
+.get-email input:-webkit-autofill:hover,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  font-size: 12px;
+}
+
+  .get-email button{
+    position: absolute;
+    padding: 0.6rem;
+    font-size: 16px;
+    width: max-content;
+    right: 10px;
+  }
+
+  .email-input{
+    margin: auto;
+    max-width: 100vw;
+  }
+
+  .social-links{
+    margin-top: 4rem;
+    z-index: 1000;
+  }
+
+  .social-links a img{
+    width: 35px;
+  }
+}
