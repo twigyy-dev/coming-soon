@@ -184,6 +184,15 @@ textarea:-webkit-autofill:focus {
   transition: 0.5s;
 }
 
+.button_redirect {
+  text-decoration: none;
+  background-color: #4ad2b4;
+  font-size: 30px;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1499px) {
   .get-email input[type="email"] {
     width: 400px;

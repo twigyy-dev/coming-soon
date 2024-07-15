@@ -38,26 +38,30 @@ export default function Home() {
     <div className="home-container">
       <div className="home-left">
         <div className="home-title">
-          <h1>--Coming Soon--</h1>
-          <h1 style={{ marginTop: -30 }}>This Summer</h1>
+          <h1>--Join Beta--</h1>
+          {/* <h1 style={{ marginTop: -30 }}>This Summer</h1> */}
           <p>Connect | Create | Inspire</p>
         </div>
-        <div className="home-mid">
+
+        {/* Mobile view */}
+        {/* <div className="home-mid">
           <img src={herologo} alt="" className="hero-logo" />
           <div className="greenmid"></div>
-        </div>
+        </div> */}
+
         <div className="get-email">
           <p>Get notified when we launch</p>
-          <div className="email-input">
+          <a href="https://beta.twigyy.com/" target="_blank" className="button_redirect">Twigyy Beta</a>
+          {/* <div className="email-input">
             <input type="email" placeholder="enter your email" name="email"
               onChange={(e) => setUser({ ...user, email: e.target.value })} />
             <button onClick={writeToDb}>Sign- up</button>
-          </div>
+          </div> */}
         </div>
         <div className="social-links">
-          <a href="https://twitter.com/Twigyy3?t=asL621oyiYwdkfRqlw8sfw&s=09"><img src={twitter} alt="" /></a>
-          <a href="https://instagram.com/_twigyy_?igshid=YmMyMTA2M2Y="><img src={instagram} alt="" /></a>
-          <a href="https://www.linkedin.com/company/twigyy/"><img src={linkedin} alt="" /></a>
+          {/* <a href="https://twitter.com/Twigyy3?t=asL621oyiYwdkfRqlw8sfw&s=09"><img src={twitter} alt="" /></a> */}
+          <a href="https://instagram.com/_twigyy_?igshid=YmMyMTA2M2Y=" target='_blank'><img src={instagram} alt="" /></a>
+          <a href="https://www.linkedin.com/company/twigyy.com/about/" target="_blank"><img src={linkedin} alt="" /></a>
         </div>
       </div>
       <div className="home-right">
